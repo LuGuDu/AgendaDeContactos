@@ -1,0 +1,85 @@
+
+/* Es un reset basico. para todos los elementos after y before */
+*,::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', 'sans-serif'; /*se establece como primaria la fuente poppins*/
+    font-size: 62.5%;/*Esto se hace para redimensionar
+    las medidas internas de css tipo rem. de este modo
+    1 rem será 10 pixeles*/
+}
+
+body{
+    background-color:rgba(0,0,0,.8);
+    color:rgba(206, 203, 203, 0.9);
+}
+
+.container{
+    height: 100vh;
+    width: 70vw;
+    margin: 2rem auto;
+}
+
+.container h2{
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom: 1rem; /*10 pixeles gracias al html font-size*/
+    font-size:2.3rem;
+}
+
+.formulario-datos{
+    width:50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction:column;
+}
+
+.formulario-datos input{
+    margin: 1rem 0rem;
+    line-height: 3rem;
+    background:none;
+    outline:0;
+    border:0;
+    color:white;
+}
+
+.formulario-datos input:active{
+    border-bottom: 1px solid dodgerblue;
+}
+
+.formulario-datos input:focus{
+    border-bottom: 1px solid dodgerblue;
+}
+
+.formulario-datos button{
+    margin: 1rem 0rem;
+    background: dodgerblue;
+    border:0;
+    outline: 0;
+    height: 3rem;
+    border-radius:5px;
+    color:white;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+.listado-contactos{
+    display:flex;
+    flex-direction: column;
+}
+
+.contacto{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:4rem;
+}
+
+.icono{
+    color:tomato;
+    cursor:pointer;
+}
